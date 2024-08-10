@@ -8,7 +8,7 @@ def find_divisible_pair(num):
             if num % (a + b) == 0:
                 pairs.append((a, b))
 
-    pairs.sort(key=lambda x: (x[0], x[1]))
+    pairs.sort()
     return pairs
 
 
@@ -23,5 +23,3 @@ while True:
             result += f"{pair[0]}{pair[1]}"
         print(result)
         break
-    else:
-        print('Нет результата')
